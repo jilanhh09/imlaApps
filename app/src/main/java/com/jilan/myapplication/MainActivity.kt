@@ -18,32 +18,7 @@ import com.jilan.myapplication.ui.theme.ImlaAppsTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            ImlaAppsTheme {
-                var showSplash by remember {mutableStateOf(true)}
-                if (showSplash){
-                    SplashScreen(onTimeout = {showSplash = false})
-                } else{
-                    SplashScreen()
-                }
-            }
-        }
+        setContentView(R.layout.activity_main)
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ImlaAppsTheme {
-        Greeting("Android")
-    }
-}
