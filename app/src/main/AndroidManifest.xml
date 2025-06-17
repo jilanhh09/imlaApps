@@ -15,8 +15,12 @@
 
 <!--        <activity android:name=".MainActivity"/>-->
 
-        <activity
-            android:name=".SplashScreen"
+
+        <activity android:name=".LearnActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".MainMenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
